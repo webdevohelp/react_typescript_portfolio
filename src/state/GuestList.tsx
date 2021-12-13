@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 const GuestList: React.FC = () => {
     const [name, setName] = useState('');
     const [guests, setGuests] = useState<string[]>([]);
 
-    const addGuest = () => {
+    const onClick = () => {
         setName('');
         setGuests([...guests, name]);
     };
@@ -22,8 +23,9 @@ const GuestList: React.FC = () => {
                     setName(e.target.value);
                 }}
             />
-            <button onClick={addGuest}>Add Guest</button>
+            <button onClick={onClick}>Add Guest</button>
         </div>
     );
 };
+
 export default GuestList;

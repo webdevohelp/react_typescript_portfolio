@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "title": "Type for arrow func based JSX components",
+        "description": "export const Component: React.FC<interfaceName>= (props)={<h1>Hello</h1>}"
+    },
+    {
+        "id": "2",
+        "title": "interface for props with array of objects",
+        "description": "interface Props {data: {id: number;name: string;};}"
+    },
+    {
+        "id": "3",
+        "title": "Event Object",
+        "description": "The Type for event object in JS is: React.ChangeEvent<HTMLInputElement>"
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "title": "React State",
+        "description": ""
+    }
+]

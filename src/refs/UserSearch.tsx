@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const UserSearch: React.FC = () => {
     const users: [
@@ -11,13 +11,18 @@ const UserSearch: React.FC = () => {
         { name: 'dog', age: 10 },
     ];
 
-    // to define the type of hooks we use angle brackets
-    //here we have state to manage some string so we set type as string
+    const inputRef = useRef<HTMLInputElement | null>(null);
     const [name, setName] = useState<string>('');
-    //here our use is an object so we set type as object using angle brackets
     const [user, setUser] = useState<
         { name: string; age: number } | undefined
     >();
+
+    useEffect(() => {
+        if (!inputRef.current) {
+            return;
+        }
+        inputRef.current.focus();
+    }, []);
 
     const searchName = () => {
         const foundUser: any = users.find((user) => {
@@ -31,6 +36,7 @@ const UserSearch: React.FC = () => {
             User Search
             <br />
             <input
+                ref={inputRef}
                 type="text"
                 value={name}
                 onChange={(e) => {
