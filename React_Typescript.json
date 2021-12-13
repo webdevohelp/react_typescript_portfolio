@@ -7,7 +7,7 @@
     {
         "id": "2",
         "title": "interface for props with array of objects",
-        "description": "interface Props {data: {id: number;name: string;};}"
+        "description": "interface Props {data: {id: number;name: string;}[];}"
     },
     {
         "id": "3",
@@ -15,17 +15,17 @@
         "description": "The Type for event object in JS is: React.ChangeEvent<HTMLInputElement>"
     },
     {
-        "id": "2",
+        "id": "4",
         "title": "React State",
-        "description": ""
+        "description": "For state we use angle brackets to define its type."
     },
     {
-        "id": "2",
-        "title": "React State",
-        "description": ""
+        "id": "5",
+        "title": "Type for refs",
+        "description": "To set type for ref we use the type of target element. ex: const inputRef = useRef<HTMLInputElement | null>(null)"
     },
     {
-        "id": "2",
+        "id": "6",
         "title": "React State",
         "description": ""
     },
