@@ -11,21 +11,26 @@
     },
     {
         "id": "3",
-        "title": "Event Object",
-        "description": "The Type for event object in JS is: React.ChangeEvent<HTMLInputElement>"
+        "title": "Interface",
+        "description": "An Interface is a structure which acts as a contract in our application. It defines the syntax for classes to follow, means a class which implements an interface is bound to implement all its members."
     },
     {
         "id": "4",
+        "title": "Event Object",
+        "description": "React uses its own event system. That’s why you can’t use typical MouseEvents or similar on your elements. You need to use the specific React version, otherwise you get a compile error. Luckily, React typings give you the proper equivalent of each event you might be familiar with from standard DOM. Events supported are: AnimationEvent, ChangeEvent, ClipboardEvent, CompositionEvent, DragEvent, FocusEvent, FormEvent, KeyboardEvent, MouseEvent, PointerEvent, TouchEvent, TransitionEvent, WheelEvent and SyntheticEvent. The Type for event object is: React.TypeOfTheEvent<HTMLInputElement>"
+    },
+    {
+        "id": "5",
         "title": "React State",
         "description": "For state we use angle brackets to define its type."
     },
     {
-        "id": "5",
+        "id": "6",
         "title": "Type for refs",
         "description": "To set type for ref we use the type of target element. ex: const inputRef = useRef<HTMLInputElement | null>(null)"
     },
     {
-        "id": "6",
+        "id": "7",
         "title": "React State",
         "description": ""
     },
