@@ -21,6 +21,7 @@ const UserSearch: React.FC = () => {
     >();
 
     useEffect(() => {
+        //checking whether type of ref is null or not
         if (!inputRef.current) {
             return;
         }
